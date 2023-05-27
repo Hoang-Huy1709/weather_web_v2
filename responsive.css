@@ -37,6 +37,14 @@
         margin-top: 30px;
         margin-bottom: 10px;
     }
+
+    .intro_block{
+        text-shadow: none;
+      }
+
+      .header_nav{
+        text-shadow: none;
+    }
     
 
 }
@@ -55,6 +63,15 @@
         width: 200%;
         height: 1300px;
     }
+
+    .intro_block{
+        text-shadow: none;
+      }
+
+      .header_nav{
+        text-shadow: none;
+    }
+    
   
 }
 
@@ -205,6 +222,15 @@
         top: 40px;
     }
 
+    .intro_block{
+        text-shadow: none;
+      }
+
+      .header_nav{
+        text-shadow: none;
+    }
+    
+
 }
 
 /* iphone 12px max */
@@ -331,6 +357,15 @@
     .ft_bt_email:hover{
         width: 330px;
     }
+
+    .intro_block{
+        text-shadow: none;
+      }
+
+      .header_nav{
+        text-shadow: none;
+    }
+    
 
 
 }
@@ -459,6 +494,15 @@
     .ft_bt_email:hover{
         width: 330px;
     }
+
+    .intro_block{
+        text-shadow: none;
+      }
+
+      .header_nav{
+        text-shadow: none;
+    }
+    
 
 
 }
