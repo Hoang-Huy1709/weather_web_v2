@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    transition: 0.3s;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.8),rgb(0,0,0,0.8)) ,url(images/hulk.png) no-repeat center/cover;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(10, 71, 184,0.6);
+    border-radius: 99px;  
+  }
+
+.header{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    text-shadow: 0px 0px 10px rgb(0,0,0,0.3);
+    background: rgb(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    animation: fade_down 1s;
+}
+
+.logo{
+    width: 80px;
+}
+
+.search_div{
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.show_error{
+    position: absolute;
+    top: 100px;
+    color: white;
+    left: 100px;
+}
+
+.search{
+    width: 35em;
+    height: 55px;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 10px;
+    transition: 0.3s;
+    border-radius: 99px;
+    border: 3px rgb(10, 71, 184,0.6) solid;
+    box-shadow: 0px 0px 15px rgb(0,0,0,0.5);
+}
+
+.search_icon{
+    font-size: 35px;
+    color: rgb(0,0,0,0.8);
+    transition: 0.3s;
+    position: absolute;
+    top: 20px;
+    outline: none;
+    right: 20px;
+}
+
+.search:hover{
+    border: 3px rgb(10, 71, 184,0.9) solid;
+    width: 37em;
+}
+
+
+.menu_icon{
+    font-size: 50px;
+    transition: 0.3s;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: rgb(255,255,255);
+}
+
+.menu_icon:hover{
+    transform: scale(1.1,1.1);
+}
+
+.forecast_block{
+    width: 100%;
+    padding: 100px;
+    height: 91vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+}
+
+.city{
+    font-size: 30px;
+}
+
+.describe{
+    font-size: 20px;
+}
+
+lottie-player{
+    animation: fade_left 1.5s;
+}
+
+/* weather today block */
+
+.weather_today{
+    transition: 0.3s;
+    position: relative;
+    border-radius: 20px;
+    color: rgb(255,255,255);
+    border: 3px rgb(107, 107, 252) solid;
+    text-shadow: 0px 0px 5px rgb(0,0,0,0.4);
+    background: url(images/hulk.png) no-repeat center/cover;
+    box-shadow: 0px 0px 15px rgb(0,0,0,0.5);
+    animation: fade_up 1s;
+}
+
+.black_space{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgb(0,0,0,0.4);
+    right: 0px;
+    top: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 999px;
+    filter: blur(50px);
+}
+
+.feature{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: right;
+    padding: 20px;
+}
+
+.feature i{
+    font-size: 125px;
+}
+
+.temperature{
+    font-size: 100px;
+}
+
+.more_info{
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0px;
+    left: 0px;
+}
+
+.more_info i{
+    font-size: 35px;
+}
+
+.back_home{
+    font-size: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    transition: 0.4s;
+}
+
+
+.back_home:hover{
+    color: rgb(231, 76, 60);
+}
+
+
+/* Forecast  */
+.weather_forecast{
+    background: rgb(0,0,0,0.1);
+    border: 3px white solid;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px rgb(0,0,0,0.5);
+    animation: fade_up 1s;
+}
+
+.fc_header{
+    border: 2px white solid;
+    width: 22em;
+    border-radius: 99px;
+    color: rgb(255,2555,255,0.9);
+    background: linear-gradient(155deg,rgb(9, 70, 183),rgb(245, 176, 65));
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 30px;
+    padding: 7px;
+}
+
+.fc_header button{
+    border: 2px solid rgb(255,255,255);
+    color: rgb(255,255,255);
+    background: none;
+    padding: 10px;
+    width: 220px;
+    border-radius: 99px;
+    transition: 0.3s;
+}
+
+.fc_header button:focus{
+    background-color: rgb(255,255,255);
+    color: rgb(10, 71, 184);
+    font-weight: bold;
+    border-radius: 99px;
+}
+
+.icon_overall{
+    position: absolute;
+    top: -130px;
+    left: -100px;
+    width: 300px;
+}
+
+
+.wait{
+    color: rgb(255,255,255);
+    text-align: center;
+    letter-spacing: 3px;
+    animation: fade_up 1s;
+}
+
+.ani_wait{
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+.hide_control{
+    display: none;
+}
+
+.title_forecast{
+    padding: 5px;
+    padding-top: 10px;
+    color: rgb(255,255,255);
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Detail forecast */
+.wt_detail{
+    padding: 5px;
+    height: 550px;
+    transition: 0.3s;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+    animation: fade_up 1s;
+}
+
+.detail_bar{
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    color: rgb(255,255,255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(255,255,255,0.2);
+    border-radius: 99px;
+    font-size: 18px;
+}
+
+.title_forecast{
+    font-size: 22px;
+}
+
+.title_forecast i{
+    font-size: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+.chevron_down i{
+    font-size: 30px;
+    color: rgb(255,255,255);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    border: 2.5px solid rgb(255,255,255);
+    background-color: none;
+    transition: 0.3s;
+    display: none;
+}
+
+.chevron_down i:HOVER{
+    color: rgb(255,255,255);
+    border: 2.5px solid rgb(255,255,255);
+    background-color: rgb(10, 71, 184);
+}
+
+/* More detail */
+.wt_more{
+    display: none;
+    padding: 5px;
+    height: 500px;
+    padding: 5px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    animation: fade_up 1s;
+}
+
+.wt_more::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  .wt_more::-webkit-scrollbar-thumb {
+    background-color: rgba(230, 229, 229, 0.7);
+    border-radius: 99px;  
+  }
+
+.detail_more_bar{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 5px;
+    color: rgb(255,255,255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 254, 253, 0.3);
+    border-radius: 99px;
+    font-size: 18px;
+}
+
+@keyframes fade_down{
+    0%{
+        opacity: 0;
+        transform: translate(0,-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes fade_up{
+    0%{
+        opacity: 0;
+        transform: translate(0,+100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes fade_right{
+    0%{
+        opacity: 0;
+        transform: translate(+100px,0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes fade_left{
+    0%{
+        opacity: 0;
+        transform: translate(-100px,0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}

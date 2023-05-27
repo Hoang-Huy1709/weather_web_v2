@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_II.css">
+    <link rel="stylesheet" href="responsive_II.css">
+    <link rel="icon" href="images/small_logo.png">
+    <title>TRA CỨU THỜI TIẾT</title>
+</head>
+<body class="body">
+
+    <div class="header">
+
+        <a href="index.html">
+            <i class='bx bx-exit bx-rotate-180 back_home' ></i>
+        </a>
+
+        <div class="search_div">
+            <input class="search" type="text" placeholder="CITY NAME">
+            <i class='bx bx-search search_icon'></i>
+            <br>
+            <p class="show_error">Nhập tên thành phố và bắt đầu tra cứu ngay !</p>
+        </div>
+        <i class='bx bx-menu menu_icon'></i>
+    </div>
+
+    <div class="forecast_block">
+
+        <div class="weather_today">
+
+            <div class="icon_overall">
+            </div>
+
+            <div class="black_space"></div>
+
+            <div class="feature">
+                <h1 class="temperature"></h1>
+                <p class="time"></p>
+                <h2 class="city">HÃY NHẬP TÊN THÀNH PHỐ</h2>
+                <h2 class="describe"></h2>
+            </div>
+
+            <div class="more_info">
+
+                <div>
+                    <i class='bx bx-bullseye bx-tada' ></i><br>
+                    <p class="visual"></p>
+                </div>
+
+                <div>
+                    <i class='bx bx-wind bx-tada' ></i><br>
+                    <p class="wind"></p>
+                </div>
+
+                <div>
+                    <i class='bx bxs-droplet-half bx-tada' ></i><br>
+                    <p class="humidity"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="weather_forecast">
+            <div class="hide_control">
+
+                <div class="fc_header">
+                    <button class="today_forecast">HÔM NAY</button>
+                    <button class="next_forecast">4 NGÀY SAU</button>
+                </div>
+
+                <div class="title_forecast">
+                    <p> <i class='bx bx-time' ></i> Thời gian</p>
+                    <p> <i class='bx bx-scatter-chart' ></i> Nhiệt độ</p>
+                    <p> <i class='bx bx-cloud-snow' ></i> Mô tả</p>
+                </div>
+
+                <div class="wt_detail">
+
+                    <div class="detail_bar">
+                        <p class="bar_time">--</p>
+                        <p class="bar_temp">--</p>
+                        <p class="bar_des">--</p>
+                    </div>
+
+                    <div class="detail_bar">
+                        <p class="bar_time">--</p>
+                        <p class="bar_temp">--</p>
+                        <p class="bar_des">--</p>
+                    </div>
+
+                    <div class="detail_bar">
+                        <p class="bar_time">--</p>
+                        <p class="bar_temp">--</p>
+                        <p class="bar_des">--</p>
+                    </div>
+
+                    <div class="detail_bar">
+                        <p class="bar_time">--</p>
+                        <p class="bar_temp">--</p>
+                        <p class="bar_des">--</p>
+                    </div>
+
+                    <div class="detail_bar">
+                        <p class="bar_time">--</p>
+                        <p class="bar_temp">--</p>
+                        <p class="bar_des">--</p>
+                    </div>
+
+                    <div class="detail_bar">
+                        <p class="bar_time">--</p>
+                        <p class="bar_temp">--</p>
+                        <p class="bar_des">--</p>
+                    </div>
+
+                    <div class="detail_bar">
+                        <p class="bar_time">--</p>
+                        <p class="bar_temp">--</p>
+                        <p class="bar_des">--</p>
+                    </div>
+
+                    <div class="detail_bar">
+                        <p class="bar_time">--</p>
+                        <p class="bar_temp">--</p>
+                        <p class="bar_des">--</p>
+                    </div>
+
+                </div>
+
+                <div class="wt_more">
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+                     
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+                     
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+                     
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+                     
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+                     
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+                    <div class="detail_more_bar">
+                        <p class="bar_more_time">--</p>
+                        <p class="bar_more_temp">--</p>
+                        <p class="bar_more_des">--</p>
+                    </div>
+
+
+                </div>
+
+                <div class="chevron_down">
+                    <i class='bx bx-chevron-down icon_down' ></i>
+                </div>
+
+            </div>
+
+            <div class="wait">
+                <lottie-player class="ani_wait" src="https://assets5.lottiefiles.com/packages/lf20_pwvj6gb8FH.json"  background="transparent"  speed="0.6"  style="width: 70%;"  loop  autoplay></lottie-player>                
+                <h3>WAITING ... </h3>
+            </div>
+  
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="call_api.js"></script>
+</body>
+</html>
